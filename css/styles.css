@@ -53,6 +53,7 @@ button{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    cursor:pointer;
     color: var(--primary-bg-color);
     background-color: var(--hover-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -90,10 +91,7 @@ button{
 .header{
     display: flex;
     align-items:center;
-    width: 1200px;
     height: 80px;
-    margin-right: auto;
-    margin-left: auto;
     border-bottom: 1px solid var(--border-color);
 }
 .header .container{
@@ -138,10 +136,11 @@ button{
 .menu-link:hover,
 .menu-link:focus,
 .menu-link:active,
-.menu-link.current{
+.menu-link.current,
+.menu-link.icon:hover{
     color: var(--hover-color);
+    fill:var(--hover-color);
 }
-
 .menu-item:not(:last-child){
     margin-right: 50px;  
 }
@@ -153,9 +152,6 @@ button{
 }
 .contacts{
     margin-left: 10px;
-}
-.icon:hover{
-    fill:var(--hover-color);
 }
 /*==============hero=============*/
 .hero{
@@ -208,6 +204,7 @@ button{
 }
 .features{
     display: flex;
+    margin-right: 30px;
 }
 .features-title{
     font-weight: 700;
@@ -256,7 +253,6 @@ button{
     display: flex;
     margin-top: -30px;
     margin-left: -30px;
-    justify-content: center;  
 }
 .service-item{
     margin-top: 30px;
@@ -307,7 +303,7 @@ button{
     display: flex;
     justify-content: center;
 }
-.emplayee-list-item{
+.emplayee-list-item:not(:last-child){
     margin-right: 10px;
 }
 .social-list-link {
